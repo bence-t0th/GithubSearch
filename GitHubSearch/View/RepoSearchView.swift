@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  RepoSearchView.swift
 //  GitHubSearch
 //
 //  Created by Bence Tóth on 09/04/2024.
@@ -7,13 +7,11 @@
 
 import SwiftUI
 
-struct HomeView: View {
+struct RepoSearchView: View {
     
     @ObservedObject var viewModel: RepositoryViewModel
     @State var repoName: String = ""
-    @State private var animation = false
     @State var selected: Item?
-    @State var showDetail = false
     
     var body: some View {
         NavigationView {
@@ -33,7 +31,6 @@ struct HomeView: View {
                             .textFieldStyle(.roundedBorder)
                         
                         Button(action: {
-                            animation.toggle()
                             viewModel.search(name: repoName)
                         }) {
                             Text("Search")
@@ -66,5 +63,5 @@ struct HomeView: View {
 }
 
 #Preview {
-    HomeView(viewModel: RepositoryViewModel())
+    RepoSearchView(viewModel: RepositoryViewModel())
 }

@@ -14,7 +14,7 @@ struct RepoDetailView: View {
         NavigationView {
             VStack(spacing: 16) {
                 HStack {
-                    AsyncImage(url: URL(string: item?.owner?.avatarURL ?? "https://swiftanytime-content.s3.ap-south-1.amazonaws.com/SwiftUI-Beginner/Async-Image/TestImage.jpeg")!) { image in
+                    AsyncImage(url: URL(string: item?.owner?.avatarURL ?? "")!) { image in
                         image
                             .resizable()
                             .aspectRatio(contentMode: .fill)

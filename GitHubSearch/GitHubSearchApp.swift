@@ -14,7 +14,7 @@ struct GitHubSearchApp: App {
     
     var body: some Scene {
         WindowGroup {
-            HomeView(viewModel: viewModel)
+            RepoSearchView(viewModel: viewModel)
                 .snackbar(visible: $viewModel.showError) {
                     Text("Something went wrong!")
                         .foregroundStyle(.white)

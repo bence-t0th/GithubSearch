@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		CEC542602BC5737A00EDD956 /* GitHubSearchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC5425F2BC5737A00EDD956 /* GitHubSearchApp.swift */; };
-		CEC542622BC5737A00EDD956 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC542612BC5737A00EDD956 /* HomeView.swift */; };
+		CEC542622BC5737A00EDD956 /* RepoSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC542612BC5737A00EDD956 /* RepoSearchView.swift */; };
 		CEC542642BC5737B00EDD956 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEC542632BC5737B00EDD956 /* Assets.xcassets */; };
 		CEC542672BC5737B00EDD956 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEC542662BC5737B00EDD956 /* Preview Assets.xcassets */; };
 		CEC5426E2BC5756900EDD956 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC5426D2BC5756900EDD956 /* API.swift */; };
@@ -22,7 +22,7 @@
 /* Begin PBXFileReference section */
 		CEC5425C2BC5737A00EDD956 /* GitHubSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitHubSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEC5425F2BC5737A00EDD956 /* GitHubSearchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubSearchApp.swift; sourceTree = "<group>"; };
-		CEC542612BC5737A00EDD956 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		CEC542612BC5737A00EDD956 /* RepoSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoSearchView.swift; sourceTree = "<group>"; };
 		CEC542632BC5737B00EDD956 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEC542662BC5737B00EDD956 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CEC5426D2BC5756900EDD956 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
@@ -64,14 +64,12 @@
 			isa = PBXGroup;
 			children = (
 				CEC5425F2BC5737A00EDD956 /* GitHubSearchApp.swift */,
-				CEC542612BC5737A00EDD956 /* HomeView.swift */,
 				CEC542632BC5737B00EDD956 /* Assets.xcassets */,
 				CEC542652BC5737B00EDD956 /* Preview Content */,
-				CEC5426D2BC5756900EDD956 /* API.swift */,
-				CEC5426F2BC575C800EDD956 /* Model.swift */,
-				CEC542732BC5837400EDD956 /* RepoListItem.swift */,
-				CEC542712BC5787800EDD956 /* RepositoryViewModel.swift */,
-				CEC542752BC5890900EDD956 /* RepoDetailView.swift */,
+				CEC5427A2BC6596200EDD956 /* Networking */,
+				CEC5427B2BC6596E00EDD956 /* Model */,
+				CEC5427D2BC6598600EDD956 /* View */,
+				CEC5427C2BC6597D00EDD956 /* ViewModel */,
 			);
 			path = GitHubSearch;
 			sourceTree = "<group>";
@@ -82,6 +80,40 @@
 				CEC542662BC5737B00EDD956 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CEC5427A2BC6596200EDD956 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				CEC5426D2BC5756900EDD956 /* API.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		CEC5427B2BC6596E00EDD956 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CEC5426F2BC575C800EDD956 /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CEC5427C2BC6597D00EDD956 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CEC542712BC5787800EDD956 /* RepositoryViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CEC5427D2BC6598600EDD956 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CEC542612BC5737A00EDD956 /* RepoSearchView.swift */,
+				CEC542752BC5890900EDD956 /* RepoDetailView.swift */,
+				CEC542732BC5837400EDD956 /* RepoListItem.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,7 +192,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEC542622BC5737A00EDD956 /* HomeView.swift in Sources */,
+				CEC542622BC5737A00EDD956 /* RepoSearchView.swift in Sources */,
 				CEC5426E2BC5756900EDD956 /* API.swift in Sources */,
 				CEC542742BC5837400EDD956 /* RepoListItem.swift in Sources */,
 				CEC542722BC5787800EDD956 /* RepositoryViewModel.swift in Sources */,
