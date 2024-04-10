@@ -1,0 +1,15 @@
+{
+  "originHash" : "513e4e20a5bd490e28dac087ca1074820f33c9d6b813888af18734ba654201ad",
+  "pins" : [
+    {
+      "identity" : "customalertkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/bence-t0th/CustomAlertKit",
+      "state" : {
+        "revision" : "b926c6c524a1ee102eedb398336d4bc29b8c5ac3",
+        "version" : "2.0.0"
+      }
+    }
+  ],
+  "version" : 3
+}
